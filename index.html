@@ -1,192 +1,109 @@
-<!DOCTYPE html><html lang="fr" class="scroll-smooth"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Portfolio · Dentiste</title><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={darkMode:"class",theme:{extend:{fontFamily:{sans:["Poppins","system-ui","-apple-system","BlinkMacSystemFont","Segoe UI","sans-serif"]},colors:{brand:{light:"#e0f2fe",DEFAULT:"#0ea5e9",dark:"#0369a1"},gold:"#facc15"},boxShadow:{lux:"0 28px 80px rgba(15,23,42,0.18)"}}}};</script><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/><style>body{font-family:"Poppins",system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.fade-up{opacity:0;transform:translateY(20px);transition:opacity .7s ease,transform .7s ease}.fade-up.show{opacity:1;transform:translateY(0)}.scale-in{opacity:0;transform:scale(.96);transition:opacity .7s ease,transform .7s ease}.scale-in.show{opacity:1;transform:scale(1)}.hero-glow{background:radial-gradient(circle at 10% 0,#e0f2fe 0,#ffffff 40%,#fef9c3 75%,#ffffff 100%)}</style></head><body class="bg-white text-slate-900 dark:bg-slate-950 dark:text-slate-100">
-<header class="fixed top-0 inset-x-0 z-40 bg-white/80 dark:bg-slate-950/80 backdrop-blur border-b border-slate-200 dark:border-slate-800">
-<div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between gap-4">
-<div class="flex items-center gap-3"><div class="w-9 h-9 rounded-full bg-gradient-to-br from-brand.light via-white to-gold/40 border border-slate-200 dark:border-slate-700 flex items-center justify-center shadow-sm"><i class="fa-solid fa-tooth text-brand.dark"></i></div><div class="leading-tight"><p class="text-[11px] tracking-[0.22em] uppercase text-slate-400 dark:text-slate-500">Portfolio · Dentiste</p><p class="text-sm font-semibold text-slate-900 dark:text-slate-100">Blanchiment · Orthodontie · Implants · Urgences</p></div></div>
-<nav class="hidden md:flex items-center gap-6 text-xs md:text-sm text-slate-600 dark:text-slate-300"><a href="#hero" class="hover:text-brand.dark dark:hover:text-brand.light">Accueil</a><a href="#about" class="hover:text-brand.dark dark:hover:text-brand.light">À propos</a><a href="#services" class="hover:text-brand.dark dark:hover:text-brand.light">Services</a><a href="#expertise" class="hover:text-brand.dark dark:hover:text-brand.light">Expertise</a><a href="#gallery" class="hover:text-brand.dark dark:hover:text-brand.light">Galerie</a><a href="#contact" class="hover:text-brand.dark dark:hover:text-brand.light">Contact</a></nav>
-<button id="themeToggle" class="inline-flex items-center gap-2 rounded-full border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900/80 text-xs md:text-sm px-3 py-1.5 shadow-sm hover:shadow-md transition-all"><span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-slate-900 text-yellow-300 dark:bg-yellow-300 dark:text-slate-900"><i class="fa-solid fa-moon text-[10px] dark:hidden"></i><i class="fa-solid fa-sun text-[10px] hidden dark:inline"></i></span><span class="text-slate-700 dark:text-slate-200">Thème</span></button>
+<!DOCTYPE html><html lang="fr" class="scroll-smooth"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Dentiste · Portfolio</title><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={darkMode:"class",theme:{extend:{fontFamily:{sans:["Poppins"]},colors:{brand:{light:"#e0f2fe",DEFAULT:"#0ea5e9",dark:"#0369a1"}},boxShadow:{lux:"0 20px 60px rgba(0,0,0,0.15)"}}}};</script><style>.fade{opacity:0;transform:translateY(20px);transition:.7s}.fade.show{opacity:1;transform:translateY(0)}</style></head><body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100">
+
+<header class="fixed top-0 inset-x-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+<div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-brand.light flex items-center justify-center"><i class="fa-solid fa-tooth text-brand.dark"></i></div><p class="font-semibold text-sm">Portfolio Dentiste</p></div>
+<button id="themeToggle" class="px-4 py-1.5 rounded-full border border-slate-300 dark:border-slate-700 text-sm">Thème</button>
 </div></header>
 
-<main class="pt-20 md:pt-24">
+<main class="pt-24">
 
-<section id="hero" class="relative overflow-hidden hero-glow dark:bg-gradient-to-br dark:from-slate-900 dark:via-slate-950 dark:to-slate-900">
-<div class="max-w-6xl mx-auto px-4 py-20 md:py-24 grid md:grid-cols-2 gap-10 items-center">
-<div class="space-y-7 fade-up">
-<p class="text-[11px] tracking-[0.28em] uppercase text-slate-500 dark:text-slate-400">Dentiste · Esthétique · Urgences</p>
-<h1 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-slate-900 dark:text-white leading-tight">Votre sourire, ma priorité à Tanger.</h1>
-<p class="text-sm md:text-base text-slate-600 dark:text-slate-300 max-w-md">Dentiste généraliste et esthétique, spécialisé en blanchiment des dents, orthodontie, implantologie et urgences dentaires. Une approche moderne, douce et rassurante pour chaque patient.</p>
-<div class="flex flex-wrap items-center gap-4">
-<a href="#services" class="inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-brand.DEFAULT to-brand.dark text-white text-sm font-medium px-6 py-3 shadow-lux hover:shadow-xl hover:from-brand.dark hover:to-slate-900 transition-all"><i class="fa-solid fa-sparkles text-xs"></i><span>Voir mes services</span></a>
-<div class="flex items-center gap-3 text-xs md:text-sm text-slate-600 dark:text-slate-300"><div class="w-9 h-9 rounded-full border border-slate-200 dark:border-slate-700 bg-white/80 dark:bg-slate-900 flex items-center justify-center"><i class="fa-solid fa-shield-heart text-brand.dark"></i></div><span>Soins précis, hygiène irréprochable, écoute attentive.</span></div>
+<section class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+<div class="fade space-y-6">
+<h1 class="text-4xl font-semibold leading-tight">Votre sourire, ma priorité.</h1>
+<p class="text-slate-600 dark:text-slate-300 text-sm">Dentiste esthétique & généraliste. Blanchiment, orthodontie, implantologie et soins dentaires modernes.</p>
+<div class="grid grid-cols-3 gap-4 text-center text-xs">
+<div><p class="text-xl font-semibold">10+</p><p>Années</p></div>
+<div><p class="text-xl font-semibold">4.9★</p><p>Avis</p></div>
+<div><p class="text-xl font-semibold">24/7</p><p>Urgences</p></div>
 </div>
-<div class="grid grid-cols-3 gap-4 pt-4 max-w-xs text-xs text-slate-500 dark:text-slate-400">
-<div class="flex flex-col gap-1"><span class="text-slate-900 dark:text-white font-semibold text-base">+10</span><span>Années d’expérience</span></div>
-<div class="flex flex-col gap-1"><span class="text-slate-900 dark:text-white font-semibold text-base">4.9/5</span><span>Patients satisfaits</span></div>
-<div class="flex flex-col gap-1"><span class="text-slate-900 dark:text-white font-semibold text-base">24/7</span><span>Urgences dentaires</span></div>
+<a href="#services" class="inline-block mt-4 px-6 py-3 bg-brand.DEFAULT text-white rounded-full shadow-lux text-sm">Voir Services</a>
 </div>
-</div>
-<div class="relative scale-in">
-<div class="rounded-3xl border border-slate-100 dark:border-slate-800 bg-white/90 dark:bg-slate-900/90 shadow-lux overflow-hidden">
-<div class="aspect-[4/5] bg-slate-50 dark:bg-slate-900 relative">
-<img src="img-reception.png" alt="Réception de clinique dentaire" class="w-full h-full object-cover"/>
-<div class="absolute inset-0 bg-gradient-to-t from-slate-900/45 via-transparent to-transparent"></div>
-<div class="absolute bottom-4 left-4 right-4 flex items-center justify-between gap-3 text-xs text-white">
-<div class="space-y-1"><p class="font-semibold">Cabinet chaleureux & professionnel.</p><p class="text-slate-200">Accueil organisé, ambiance rassurante et environnement médical maîtrisé.</p></div>
-<div class="flex flex-col items-end gap-1"><span class="inline-flex items-center gap-1 rounded-full bg-white/10 px-3 py-1 border border-white/20 text-[11px]"><i class="fa-solid fa-heart-pulse text-pink-300"></i><span>Confiance & sérénité</span></span></div>
-</div>
-</div>
-</div>
-</div>
-</div></section>
 
-<section id="about" class="bg-white dark:bg-slate-950">
-<div class="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-[1.1fr,0.9fr] gap-10 md:gap-14 items-center">
-<div class="space-y-6 fade-up">
-<p class="text-[11px] tracking-[0.26em] uppercase text-slate-400 dark:text-slate-500">À propos</p>
-<h2 class="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-white">Dentiste généraliste & esthétique, engagé pour un sourire sain.</h2>
-<p class="text-sm md:text-base text-slate-600 dark:text-slate-300 max-w-xl">Je combine une approche médicale rigoureuse avec une sensibilité esthétique. Blanchiment, orthodontie, implants et urgences sont pris en charge avec des protocoles d’hygiène stricts, une technologie moderne et une écoute attentive.</p>
-<div class="grid md:grid-cols-2 gap-5 text-xs md:text-sm text-slate-600 dark:text-slate-300">
-<div class="space-y-2"><p class="font-semibold text-slate-900 dark:text-white">Philosophie de soins</p><p>• Prévenir avant de traiter<br/>• Respecter la sensibilité de chaque patient<br/>• Privilégier des solutions durables et esthétiques</p></div>
-<div class="space-y-2"><p class="font-semibold text-slate-900 dark:text-white">Domaines d’expertise</p><p>• Blanchiment professionnel<br/>• Orthodontie moderne<br/>• Implantologie de précision<br/>• Dentisterie cosmétique & urgences</p></div>
+<div class="fade">
+<div class="rounded-3xl overflow-hidden shadow-lux border border-slate-200 dark:border-slate-800">
+<img src="https://media.istockphoto.com/id/1147521454/fr/photo/plan-rapproch%C3%A9-de-femme-se-trouvant-sur-la-chaise-dentaire-avec-la-bouche-ouverte.webp?a=1&b=1&s=612x612&w=0&k=20&c=Z6UX4EyEesLEKcMdft1tpyCi74Ipq0m-wBXDVcQ9ujk=" class="w-full h-full object-cover"/>
 </div>
 </div>
-<div class="space-y-5 scale-in">
-<div class="rounded-3xl border border-slate-100 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-900/80 p-6 md:p-7">
-<p class="text-[11px] uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500 mb-3">Profil professionnel</p>
-<div class="flex items-center gap-4 mb-4">
-<div class="w-16 h-16 rounded-2xl overflow-hidden border border-slate-200 dark:border-slate-700 bg-slate-100 dark:bg-slate-800">
-<img src="img-procedure.jpeg" alt="Dentiste en action" class="w-full h-full object-cover"/>
-</div>
-<div class="space-y-1 text-sm">
-<p class="font-semibold text-slate-900 dark:text-white">Dr. Nom Prénom</p>
-<p class="text-slate-500 dark:text-slate-400">Dentiste généraliste & esthétique · Tanger</p>
-<p class="text-[11px] text-slate-400 dark:text-slate-500">Spécialisé en blanchiment, orthodontie, implants et urgences dentaires.</p>
-</div>
-</div>
-<div class="grid grid-cols-3 gap-4 text-[11px] text-slate-500 dark:text-slate-400">
-<div class="space-y-1"><p class="font-semibold text-slate-900 dark:text-white text-sm">Diplômes</p><p>Doctorat en chirurgie dentaire<br/>Formations en implantologie & esthétique.</p></div>
-<div class="space-y-1"><p class="font-semibold text-slate-900 dark:text-white text-sm">Langues</p><p>Français · Arabe · Anglais</p></div>
-<div class="space-y-1"><p class="font-semibold text-slate-900 dark:text-white text-sm">Valeurs</p><p>Éthique · Transparence · Empathie.</p></div>
-</div>
-</div>
-</div>
-</div></section>
+</section>
 
-<section id="services" class="bg-slate-50/70 dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
-<div class="max-w-6xl mx-auto px-4 py-16 md:py-20 space-y-10">
-<div class="flex flex-col md:flex-row md:items-end md:justify-between gap-6 fade-up">
-<div class="space-y-3">
-<p class="text-[11px] tracking-[0.26em] uppercase text-slate-400 dark:text-slate-500">Services</p>
-<h2 class="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-white">Des soins complets pour un sourire harmonieux.</h2>
-<p class="text-sm md:text-base text-slate-600 dark:text-slate-300 max-w-xl">Blanchiment des dents, orthodontie, implantologie, dentisterie cosmétique et urgences dentaires : chaque service est réalisé avec une approche douce, expliquée et sécurisée.</p>
-</div>
-<p class="text-xs md:text-sm text-slate-500 dark:text-slate-400 max-w-sm">Protocoles d’hygiène stricts, équipements modernes et suivi personnalisé pour chaque patient.</p>
-</div>
-<div class="grid md:grid-cols-3 gap-6 md:gap-8 scale-in">
-<div class="group rounded-2xl bg-white dark:bg-slate-950 border border-slate-100 dark:border-slate-800 hover:border-brand.light hover:shadow-lux transition-all p-6 flex flex-col gap-4">
-<div class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-brand.light text-brand.dark border border-brand.light/60 group-hover:bg-brand.dark group-hover:text-white group-hover:border-brand.dark transition-colors"><i class="fa-solid fa-sparkles"></i></div>
-<div class="space-y-2"><h3 class="text-base md:text-lg font-semibold text-slate-900 dark:text-white">Blanchiment des dents</h3><p class="text-xs md:text-sm text-slate-600 dark:text-slate-300">Éclaircissement professionnel pour un sourire lumineux, sans agresser l’émail.</p></div>
-<ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1"><li>• Techniques sécurisées et contrôlées</li><li>• Résultats visibles rapidement</li><li>• Adapté aux sensibilités dentaires</li></ul>
-</div>
-<div class="group rounded-2xl bg-white dark:bg-slate-950 border border-slate-100 dark:border-slate-800 hover:border-brand.light hover:shadow-lux transition-all p-6 flex flex-col gap-4">
-<div class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-brand.light text-brand.dark border border-brand.light/60 group-hover:bg-brand.dark group-hover:text-white group-hover:border-brand.dark transition-colors"><i class="fa-solid fa-teeth"></i></div>
-<div class="space-y-2"><h3 class="text-base md:text-lg font-semibold text-slate-900 dark:text-white">Orthodontie</h3><p class="text-xs md:text-sm text-slate-600 dark:text-slate-300">Alignement des dents avec des solutions discrètes et confortables pour adultes et enfants.</p></div>
-<ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1"><li>• Appareils fixes et amovibles</li><li>• Orthodontie esthétique</li><li>• Suivi régulier et personnalisé</li></ul>
-</div>
-<div class="group rounded-2xl bg-white dark:bg-slate-950 border border-slate-100 dark:border-slate-800 hover:border-brand.light hover:shadow-lux transition-all p-6 flex flex-col gap-4">
-<div class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-brand.light text-brand.dark border border-brand.light/60 group-hover:bg-brand.dark group-hover:text-white group-hover:border-brand.dark transition-colors"><i class="fa-solid fa-screwdriver-wrench"></i></div>
-<div class="space-y-2"><h3 class="text-base md:text-lg font-semibold text-slate-900 dark:text-white">Implantologie</h3><p class="text-xs md:text-sm text-slate-600 dark:text-slate-300">Remplacement durable des dents manquantes avec des implants de haute qualité.</p></div>
-<ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1"><li>• Planification 3D précise</li><li>• Intégration naturelle dans le sourire</li><li>• Confort et stabilité à long terme</li></ul>
-</div>
-<div class="group rounded-2xl bg-white dark:bg-slate-950 border border-slate-100 dark:border-slate-800 hover:border-brand.light hover:shadow-lux transition-all p-6 flex flex-col gap-4 md:col-span-2">
-<div class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-brand.light text-brand.dark border border-brand.light/60 group-hover:bg-brand.dark group-hover:text-white group-hover:border-brand.dark transition-colors"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
-<div class="space-y-2"><h3 class="text-base md:text-lg font-semibold text-slate-900 dark:text-white">Dentisterie cosmétique</h3><p class="text-xs md:text-sm text-slate-600 dark:text-slate-300">Veneers, corrections esthétiques et design du sourire pour un rendu naturel et harmonieux.</p></div>
-<ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1"><li>• Analyse du sourire</li><li>• Solutions personnalisées</li><li>• Respect de la morphologie du visage</li></ul>
-</div>
-<div class="group rounded-2xl bg-white dark:bg-slate-950 border border-slate-100 dark:border-slate-800 hover:border-brand.light hover:shadow-lux transition-all p-6 flex flex-col gap-4">
-<div class="inline-flex items-center justify-center w-11 h-11 rounded-full bg-brand.light text-brand.dark border border-brand.light/60 group-hover:bg-brand.dark group-hover:text-white group-hover:border-brand.dark transition-colors"><i class="fa-solid fa-triangle-exclamation"></i></div>
-<div class="space-y-2"><h3 class="text-base md:text-lg font-semibold text-slate-900 dark:text-white">Urgences dentaires</h3><p class="text-xs md:text-sm text-slate-600 dark:text-slate-300">Prise en charge rapide des douleurs aiguës, fractures et infections.</p></div>
-<ul class="text-xs text-slate-500 dark:text-slate-400 space-y-1"><li>• Gestion de la douleur</li><li>• Interventions rapides</li><li>• Suivi après urgence</li></ul>
-</div>
-</div>
-</div></section>
-
-<section id="expertise" class="bg-white dark:bg-slate-950">
-<div class="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-[1.1fr,0.9fr] gap-10 md:gap-14 items-start">
-<div class="space-y-6 fade-up">
-<p class="text-[11px] tracking-[0.26em] uppercase text-slate-400 dark:text-slate-500">Expertise</p>
-<h2 class="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-white">Parcours et expériences cliniques.</h2>
-<p class="text-sm md:text-base text-slate-600 dark:text-slate-300 max-w-xl">Un parcours marqué par la pratique clinique, la formation continue et l’intégration des dernières avancées en dentisterie esthétique et fonctionnelle.</p>
-<div class="space-y-4 text-xs md:text-sm text-slate-600 dark:text-slate-300">
-<div class="flex gap-3"><div class="w-8 h-8 rounded-full bg-brand.light/60 text-brand.dark flex items-center justify-center"><i class="fa-solid fa-graduation-cap text-[11px]"></i></div><div><p class="font-semibold text-slate-900 dark:text-white">Formation universitaire</p><p>Doctorat en chirurgie dentaire, avec spécialisation en implantologie et esthétique.</p></div></div>
-<div class="flex gap-3"><div class="w-8 h-8 rounded-full bg-brand.light/60 text-brand.dark flex items-center justify-center"><i class="fa-solid fa-hospital text-[11px]"></i></div><div><p class="font-semibold text-slate-900 dark:text-white">Expérience en clinique</p><p>Pratique en cabinet privé et centres dentaires, prise en charge de cas complexes et esthétiques.</p></div></div>
-<div class="flex gap-3"><div class="w-8 h-8 rounded-full bg-brand.light/60 text-brand.dark flex items-center justify-center"><i class="fa-solid fa-book-medical text-[11px]"></i></div><div><p class="font-semibold text-slate-900 dark:text-white">Formation continue</p><p>Congrès, workshops et formations en dentisterie numérique, blanchiment et orthodontie moderne.</p></div></div>
-</div>
-</div>
-<div class="space-y-5 scale-in">
-<div class="rounded-3xl border border-slate-100 dark:border-slate-800 bg-slate-50/80 dark:bg-slate-900/80 p-6 md:p-7">
-<p class="text-[11px] uppercase tracking-[0.2em] text-slate-400 dark:text-slate-500 mb-3">Points forts</p>
-<ul class="space-y-2 text-xs md:text-sm text-slate-600 dark:text-slate-300">
-<li>• Capacité à vulgariser les traitements pour rassurer les patients.</li>
-<li>• Sens esthétique développé pour harmoniser le sourire avec le visage.</li>
-<li>• Maîtrise des protocoles d’hygiène et de sécurité.</li>
-<li>• Approche centrée sur la relation de confiance et l’écoute.</li>
+<section id="about" class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10">
+<div class="fade space-y-4">
+<h2 class="text-3xl font-semibold">À propos</h2>
+<p class="text-sm text-slate-600 dark:text-slate-300">Dentiste passionné par l’esthétique du sourire et les soins modernes. Approche douce, précise et rassurante.</p>
+<ul class="text-sm space-y-2 text-slate-600 dark:text-slate-300">
+<li>• Blanchiment professionnel</li>
+<li>• Orthodontie moderne</li>
+<li>• Implantologie</li>
+<li>• Urgences dentaires</li>
 </ul>
 </div>
-</div>
-</div></section>
 
-<section id="gallery" class="bg-slate-50/70 dark:bg-slate-900 border-y border-slate-100 dark:border-slate-800">
-<div class="max-w-6xl mx-auto px-4 py-16 md:py-20 space-y-8">
-<div class="space-y-3 fade-up">
-<p class="text-[11px] tracking-[0.26em] uppercase text-slate-400 dark:text-slate-500">Galerie</p>
-<h2 class="text-2xl md:text-3xl font-semibold text-slate-900 dark:text-white">Cabinet, outils & sourire.</h2>
+<div class="fade rounded-3xl overflow-hidden shadow-lux border border-slate-200 dark:border-slate-800">
+<img src="https://media.istockphoto.com/id/2247102092/fr/photo/bouche-examen-et-mains-gant%C3%A9es-soins-dentaires-et-inspection-des-caries-sant%C3%A9-bucco-dentaire.webp?a=1&b=1&s=612x612&w=0&k=20&c=uTdkQ7h93gP7v150ZglifvJbGnC79tpeva2Z302FLYM=" class="w-full h-full object-cover"/>
 </div>
-<div class="grid md:grid-cols-4 gap-5 md:gap-6 scale-in">
-<div class="rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 group hover:shadow-lux transition-shadow">
-<img src="img-tools.png" alt="Outils dentaires" class="w-full h-40 md:h-48 object-cover group-hover:scale-[1.03] transition-transform"/>
-</div>
-<div class="rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 group hover:shadow-lux transition-shadow">
-<img src="img-reception.png" alt="Réception clinique" class="w-full h-40 md:h-48 object-cover group-hover:scale-[1.03] transition-transform"/>
-</div>
-<div class="rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 group hover:shadow-lux transition-shadow">
-<img src="img-smile.jpeg" alt="Sourire esthétique" class="w-full h-40 md:h-48 object-cover group-hover:scale-[1.03] transition-transform"/>
-</div>
-<div class="rounded-2xl overflow-hidden border border-slate-100 dark:border-slate-800 bg-slate-100 dark:bg-slate-800 group hover:shadow-lux transition-shadow">
-<img src="img-procedure.jpeg" alt="Procédure dentaire" class="w-full h-40 md:h-48 object-cover group-hover:scale-[1.03] transition-transform"/>
-</div>
-</div>
-</div></section>
+</section>
 
-<section id="contact" class="bg-slate-900 text-slate-50">
-<div class="max-w-6xl mx-auto px-4 py-16 md:py-20 grid md:grid-cols-[1.1fr,0.9fr] gap-10 md:gap-14 items-start">
-<div class="space-y-6 fade-up">
-<p class="text-[11px] tracking-[0.26em] uppercase text-slate-400">Contact</p>
-<h2 class="text-2xl md:text-3xl font-semibold text-white">Me contacter pour une collaboration ou un projet.</h2>
-<p class="text-sm md:text-base text-slate-300 max-w-xl">Pour des projets de santé, de sensibilisation, de contenu ou de collaboration autour de la dentisterie, je suis ouvert aux échanges professionnels.</p>
-<div class="space-y-4 text-xs md:text-sm text-slate-300">
-<div class="flex items-start gap-3"><div class="w-9 h-9 rounded-full border border-slate-700 bg-slate-800 flex items-center justify-center text-brand.light"><i class="fa-solid fa-envelope"></i></div><div><p class="text-[11px] uppercase tracking-[0.18em] text-slate-400">Email</p><p class="text-sm md:text-base font-medium text-white">contact@exemple.com</p><p class="text-[11px] text-slate-400">Pour toute demande professionnelle ou prise de contact.</p></div></div>
-<div class="flex items-start gap-3"><div class="w-9 h-9 rounded-full border border-slate-700 bg-slate-800 flex items-center justify-center text-brand.light"><i class="fa-solid fa-location-dot"></i></div><div><p class="text-[11px] uppercase tracking-[0.18em] text-slate-400">Basé à</p><p class="text-sm md:text-base font-medium text-white">Tanger, Maroc</p><p class="text-[11px] text-slate-400">Disponible pour projets locaux et collaborations à distance.</p></div></div>
+<section id="services" class="max-w-6xl mx-auto px-4 py-16">
+<h2 class="text-3xl font-semibold mb-10 fade">Services Dentaires</h2>
+<div class="grid md:grid-cols-3 gap-6">
+
+<div class="fade p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow">
+<h3 class="font-semibold mb-2">Blanchiment</h3>
+<p class="text-sm text-slate-600 dark:text-slate-300">Éclaircissement professionnel pour un sourire lumineux.</p>
 </div>
-<a href="#hero" class="inline-flex items-center gap-2 rounded-full border border-slate-700 bg-slate-900/60 text-slate-100 text-xs md:text-sm font-medium px-5 py-2 hover:bg-slate-800 hover:border-slate-500 transition-all"><i class="fa-solid fa-arrow-up-long text-xs"></i><span>Retour en haut de la page</span></a>
+
+<div class="fade p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow">
+<h3 class="font-semibold mb-2">Orthodontie</h3>
+<p class="text-sm text-slate-600 dark:text-slate-300">Alignement discret et moderne.</p>
 </div>
-<div class="space-y-5 scale-in rounded-3xl border border-slate-800 bg-slate-900/70 p-6 md:p-7">
-<p class="text-[11px] uppercase tracking-[0.2em] text-slate-400">Informations rapides</p>
-<ul class="space-y-2 text-xs md:text-sm text-slate-300">
-<li>• Disponible pour interventions sur la prévention bucco-dentaire.</li>
-<li>• Intéressé par les projets de sensibilisation à la santé orale.</li>
-<li>• Ouvert aux collaborations avec cliniques, écoles et médias.</li>
-</ul>
-<p class="text-[11px] text-slate-500">Ce portfolio présente ma vision de la dentisterie : précise, humaine et esthétique.</p>
+
+<div class="fade p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow">
+<h3 class="font-semibold mb-2">Implants</h3>
+<p class="text-sm text-slate-600 dark:text-slate-300">Remplacement durable et naturel.</p>
 </div>
-</div></section>
+
+</div>
+</section>
+
+<section id="gallery" class="max-w-6xl mx-auto px-4 py-16">
+<h2 class="text-3xl font-semibold mb-10 fade">Galerie</h2>
+<div class="grid md:grid-cols-4 gap-5">
+
+<div class="fade rounded-2xl overflow-hidden shadow border border-slate-200 dark:border-slate-800">
+<img src="https://images.unsplash.com/photo-1495573020741-8a2f372bbec3?w=600&auto=format&fit=crop&q=60" class="w-full h-40 object-cover"/>
+</div>
+
+<div class="fade rounded-2xl overflow-hidden shadow border border-slate-200 dark:border-slate-800">
+<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&auto=format&fit=crop&q=60" class="w-full h-40 object-cover"/>
+</div>
+
+<div class="fade rounded-2xl overflow-hidden shadow border border-slate-200 dark:border-slate-800">
+<img src="https://media.istockphoto.com/id/1147521454/fr/photo/plan-rapproch%C3%A9-de-femme-se-trouvant-sur-la-chaise-dentaire-avec-la-bouche-ouverte.webp?a=1&b=1&s=612x612&w=0&k=20&c=Z6UX4EyEesLEKcMdft1tpyCi74Ipq0m-wBXDVcQ9ujk=" class="w-full h-40 object-cover"/>
+</div>
+
+<div class="fade rounded-2xl overflow-hidden shadow border border-slate-200 dark:border-slate-800">
+<img src="https://media.istockphoto.com/id/2247102092/fr/photo/bouche-examen-et-mains-gant%C3%A9es-soins-dentaires-et-inspection-des-caries-sant%C3%A9-bucco-dentaire.webp?a=1&b=1&s=612x612&w=0&k=20&c=uTdkQ7h93gP7v150ZglifvJbGnC79tpeva2Z302FLYM=" class="w-full h-40 object-cover"/>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="max-w-6xl mx-auto px-4 py-16">
+<h2 class="text-3xl font-semibold mb-6 fade">Contact</h2>
+<p class="text-sm text-slate-600 dark:text-slate-300 fade">Email : contact@exemple.com</p>
+<p class="text-sm text-slate-600 dark:text-slate-300 fade">Tanger, Maroc</p>
+</section>
 
 </main>
 
-<footer class="bg-black text-slate-500 text-xs">
-<div class="max-w-6xl mx-auto px-4 py-4 flex flex-col md:flex-row items-center justify-between gap-3">
-<p>© <span id="year"></span> Portfolio Dentiste · Tous droits réservés.</p>
-<p class="text-[11px]">Design minimaliste & médical · Hygiène, confiance et sourire au cœur de ma pratique.</p>
-</div></footer>
+<footer class="py-6 text-center text-xs text-slate-500 dark:text-slate-400">© <span id="year"></span> Dentiste · Portfolio</footer>
 
-<script>document.getElementById("year").textContent=new Date().getFullYear();const t=document.getElementById("themeToggle"),r=document.documentElement;t.addEventListener("click",()=>{r.classList.toggle("dark")});const s=()=>{document.querySelectorAll(".fade-up,.scale-in").forEach(e=>{const o=e.getBoundingClientRect();if(o.top<window.innerHeight-80)e.classList.add("show")})};window.addEventListener("scroll",s);s();</script>
+<script>
+document.getElementById("year").textContent=new Date().getFullYear();
+document.getElementById("themeToggle").onclick=()=>document.documentElement.classList.toggle("dark");
+const reveal=()=>document.querySelectorAll(".fade").forEach(e=>{if(e.getBoundingClientRect().top<window.innerHeight-60)e.classList.add("show")});
+window.addEventListener("scroll",reveal);reveal();
+</script>
+
 </body></html>
