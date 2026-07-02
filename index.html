@@ -1,108 +1,177 @@
-<!DOCTYPE html><html lang="fr" class="scroll-smooth"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Dentiste · Portfolio</title><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={darkMode:"class",theme:{extend:{fontFamily:{sans:["Poppins"]},colors:{brand:{light:"#e0f2fe",DEFAULT:"#0ea5e9",dark:"#0369a1"}},boxShadow:{lux:"0 20px 60px rgba(0,0,0,0.15)"}}}};</script><style>.fade{opacity:0;transform:translateY(20px);transition:.7s}.fade.show{opacity:1;transform:translateY(0)}</style></head><body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100">
+<!DOCTYPE html><html lang="fr" class="scroll-smooth"><head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>Cabinet Dentaire Moderne</title><link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script>tailwind.config={darkMode:"class",theme:{extend:{fontFamily:{sans:["Poppins"]},colors:{brand:{light:"#e0f2fe",DEFAULT:"#0ea5e9",dark:"#0369a1"},accent:"#22c55e"},boxShadow:{lux:"0 30px 80px rgba(15,23,42,0.35)"}}}};</script><style>body{font-family:"Poppins",system-ui;-webkit-font-smoothing:antialiased;background:linear-gradient(135deg,#0f172a,#020617,#0ea5e9);} .fade{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;} .fade.show{opacity:1;transform:translateY(0);} .card-hover{transition:transform .3s ease,box-shadow .3s ease;} .card-hover:hover{transform:translateY(-6px);box-shadow:0 20px 50px rgba(15,23,42,.45);}</style><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/></head><body class="text-slate-100 dark:text-slate-100">
 
-<header class="fixed top-0 inset-x-0 z-50 bg-white/80 dark:bg-slate-950/80 backdrop-blur border-b border-slate-200 dark:border-slate-800">
+<header class="fixed top-0 inset-x-0 z-50 bg-slate-900/80 dark:bg-slate-950/80 backdrop-blur border-b border-slate-800">
 <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-<div class="flex items-center gap-3"><div class="w-10 h-10 rounded-full bg-brand.light flex items-center justify-center"><i class="fa-solid fa-tooth text-brand.dark"></i></div><p class="font-semibold text-sm">Portfolio Dentiste</p></div>
-<button id="themeToggle" class="px-4 py-1.5 rounded-full border border-slate-300 dark:border-slate-700 text-sm">Thème</button>
-</div></header>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-brand.light flex items-center justify-center text-brand.dark"><i class="fa-solid fa-tooth"></i></div>
+<div>
+<p class="text-xs tracking-[0.25em] uppercase text-slate-400">Cabinet Dentaire</p>
+<p class="text-sm font-semibold">Blanchiment · Orthodontie · Implants · Urgences</p>
+</div>
+</div>
+<button id="themeToggle" class="px-4 py-1.5 rounded-full border border-slate-600 text-xs">Changer le thème</button>
+</div>
+</header>
 
-<main class="pt-24">
+<main class="pt-24 pb-16">
 
-<section class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
+<section class="max-w-6xl mx-auto px-4 py-12 grid lg:grid-cols-[1.2fr,1fr] gap-10 items-center">
 <div class="fade space-y-6">
-<h1 class="text-4xl font-semibold leading-tight">Votre sourire, ma priorité.</h1>
-<p class="text-slate-600 dark:text-slate-300 text-sm">Dentiste esthétique & généraliste. Blanchiment, orthodontie, implantologie et soins dentaires modernes.</p>
+<p class="text-xs tracking-[0.3em] uppercase text-slate-300">Sourire · Confiance · Santé</p>
+<h1 class="text-4xl md:text-5xl font-semibold leading-tight">Un cabinet dentaire moderne pour un sourire sûr.</h1>
+<p class="text-sm md:text-base text-slate-200">Blanchiment des dents, orthodontie, implantologie et urgences dentaires dans une ambiance professionnelle, rassurante et organisée.</p>
 <div class="grid grid-cols-3 gap-4 text-center text-xs">
-<div><p class="text-xl font-semibold">10+</p><p>Années</p></div>
-<div><p class="text-xl font-semibold">4.9★</p><p>Avis</p></div>
-<div><p class="text-xl font-semibold">24/7</p><p>Urgences</p></div>
+<div class="card-hover rounded-2xl bg-slate-900/70 border border-slate-700 p-3">
+<p class="text-xl font-semibold text-brand.light">10+</p><p>Années d’expérience</p><p class="text-[11px] text-slate-400 mt-1">Cas esthétiques et fonctionnels.</p>
 </div>
-<a href="#services" class="inline-block mt-4 px-6 py-3 bg-brand.DEFAULT text-white rounded-full shadow-lux text-sm">Voir Services</a>
+<div class="card-hover rounded-2xl bg-slate-900/70 border border-slate-700 p-3">
+<p class="text-xl font-semibold text-brand.light">4.9★</p><p>Patients satisfaits</p><p class="text-[11px] text-slate-400 mt-1">Avis et suivi personnalisés.</p>
 </div>
-
-<div class="fade">
-<div class="rounded-3xl overflow-hidden shadow-lux border border-slate-200 dark:border-slate-800">
-<img src="https://media.istockphoto.com/id/1147521454/fr/photo/plan-rapproch%C3%A9-de-femme-se-trouvant-sur-la-chaise-dentaire-avec-la-bouche-ouverte.webp?a=1&b=1&s=612x612&w=0&k=20&c=Z6UX4EyEesLEKcMdft1tpyCi74Ipq0m-wBXDVcQ9ujk=" class="w-full h-full object-cover"/>
+<div class="card-hover rounded-2xl bg-slate-900/70 border border-slate-700 p-3">
+<p class="text-xl font-semibold text-brand.light">24/7</p><p>Urgences</p><p class="text-[11px] text-slate-400 mt-1">Prise en charge rapide.</p>
+</div>
+</div>
+<div class="flex flex-wrap gap-3 mt-4">
+<a href="#services" class="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-brand.DEFAULT text-white text-sm shadow-lux"><i class="fa-solid fa-sparkles text-xs"></i><span>Voir les services</span></a>
+<a href="#approche" class="inline-flex items-center gap-2 px-5 py-2 rounded-full border border-slate-500 text-xs bg-slate-900/60"><i class="fa-solid fa-heart-pulse text-xs text-accent"></i><span>Approche douce & précise</span></a>
+</div>
+</div>
+<div class="fade space-y-4">
+<div class="rounded-3xl overflow-hidden shadow-lux border border-slate-800 card-hover">
+<img src="https://media.istockphoto.com/id/1147521454/fr/photo/plan-rapproch%C3%A9-de-femme-se-trouvant-sur-la-chaise-dentaire-avec-la-bouche-ouverte.webp?a=1&b=1&s=612x612&w=0&k=20&c=Z6UX4EyEesLEKcMdft1tpyCi74Ipq0m-wBXDVcQ9ujk=" class="w-full h-full object-cover" alt="Patiente sur chaise dentaire"/>
+</div>
+<div class="rounded-2xl bg-slate-900/70 border border-slate-700 p-4 text-xs space-y-2">
+<p class="text-[11px] tracking-[0.25em] uppercase text-slate-400">Cabinet organisé</p>
+<p>Hygiène stricte, matériel moderne et protocole clair pour chaque soin.</p>
 </div>
 </div>
 </section>
 
-<section id="about" class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10">
+<section id="approche" class="max-w-6xl mx-auto px-4 py-10 grid lg:grid-cols-2 gap-10">
 <div class="fade space-y-4">
-<h2 class="text-3xl font-semibold">À propos</h2>
-<p class="text-sm text-slate-600 dark:text-slate-300">Dentiste passionné par l’esthétique du sourire et les soins modernes. Approche douce, précise et rassurante.</p>
-<ul class="text-sm space-y-2 text-slate-600 dark:text-slate-300">
-<li>• Blanchiment professionnel</li>
-<li>• Orthodontie moderne</li>
-<li>• Implantologie</li>
-<li>• Urgences dentaires</li>
+<h2 class="text-3xl font-semibold">Approche & philosophie de soins.</h2>
+<p class="text-sm text-slate-200">Une dentisterie centrée sur le patient : explications simples, gestes précis et respect de la sensibilité de chacun.</p>
+<div class="grid md:grid-cols-2 gap-4 text-xs">
+<div class="card-hover rounded-2xl bg-slate-900/70 border border-slate-700 p-4">
+<p class="font-semibold mb-1">Prévention avant tout</p>
+<p>Contrôles réguliers, conseils d’hygiène et suivi personnalisé.</p>
+</div>
+<div class="card-hover rounded-2xl bg-slate-900/70 border border-slate-700 p-4">
+<p class="font-semibold mb-1">Esthétique naturelle</p>
+<p>Respect de la morphologie du visage et du sourire.</p>
+</div>
+<div class="card-hover rounded-2xl bg-slate-900/70 border border-slate-700 p-4">
+<p class="font-semibold mb-1">Confort du patient</p>
+<p>Ambiance calme, gestes doux et explications avant chaque acte.</p>
+</div>
+<div class="card-hover rounded-2xl bg-slate-900/70 border border-slate-700 p-4">
+<p class="font-semibold mb-1">Technologie moderne</p>
+<p>Matériel récent, techniques actuelles et protocoles sécurisés.</p>
+</div>
+</div>
+</div>
+<div class="fade rounded-3xl overflow-hidden shadow-lux border border-slate-800 card-hover">
+<img src="https://media.istockphoto.com/id/2247102092/fr/photo/bouche-examen-et-mains-gant%C3%A9es-soins-dentaires-et-inspection-des-caries-sant%C3%A9-bucco-dentaire.webp?a=1&b=1&s=612x612&w=0&k=20&c=uTdkQ7h93gP7v150ZglifvJbGnC79tpeva2Z302FLYM=" class="w-full h-full object-cover" alt="Examen dentaire"/>
+</div>
+</section>
+
+<section id="services" class="max-w-6xl mx-auto px-4 py-12">
+<div class="fade mb-8">
+<h2 class="text-3xl font-semibold">Services dentaires principaux.</h2>
+<p class="text-sm text-slate-200 mt-2">Blanchiment, orthodontie, implantologie, dentisterie cosmétique et urgences dentaires.</p>
+</div>
+<div class="grid md:grid-cols-4 gap-6 text-xs">
+
+<div class="fade card-hover rounded-2xl bg-slate-900/80 border border-slate-700 p-5">
+<p class="text-[11px] tracking-[0.25em] uppercase text-slate-400 mb-2">Blanchiment</p>
+<h3 class="font-semibold mb-2 text-sm">Blanchiment des dents</h3>
+<p class="text-slate-200 mb-2">Éclaircissement professionnel pour un sourire plus lumineux, sans agresser l’émail.</p>
+<ul class="space-y-1 text-slate-400">
+<li>• Techniques contrôlées</li>
+<li>• Résultats rapides</li>
+<li>• Adapté aux sensibilités</li>
 </ul>
 </div>
 
-<div class="fade rounded-3xl overflow-hidden shadow-lux border border-slate-200 dark:border-slate-800">
-<img src="https://media.istockphoto.com/id/2247102092/fr/photo/bouche-examen-et-mains-gant%C3%A9es-soins-dentaires-et-inspection-des-caries-sant%C3%A9-bucco-dentaire.webp?a=1&b=1&s=612x612&w=0&k=20&c=uTdkQ7h93gP7v150ZglifvJbGnC79tpeva2Z302FLYM=" class="w-full h-full object-cover"/>
-</div>
-</section>
-
-<section id="services" class="max-w-6xl mx-auto px-4 py-16">
-<h2 class="text-3xl font-semibold mb-10 fade">Services Dentaires</h2>
-<div class="grid md:grid-cols-3 gap-6">
-
-<div class="fade p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow">
-<h3 class="font-semibold mb-2">Blanchiment</h3>
-<p class="text-sm text-slate-600 dark:text-slate-300">Éclaircissement professionnel pour un sourire lumineux.</p>
+<div class="fade card-hover rounded-2xl bg-slate-900/80 border border-slate-700 p-5">
+<p class="text-[11px] tracking-[0.25em] uppercase text-slate-400 mb-2">Orthodontie</p>
+<h3 class="font-semibold mb-2 text-sm">Orthodontie moderne</h3>
+<p class="text-slate-200 mb-2">Alignement discret pour adultes et enfants, avec solutions esthétiques.</p>
+<ul class="space-y-1 text-slate-400">
+<li>• Appareils fixes</li>
+<li>• Aligneurs esthétiques</li>
+<li>• Suivi régulier</li>
+</ul>
 </div>
 
-<div class="fade p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow">
-<h3 class="font-semibold mb-2">Orthodontie</h3>
-<p class="text-sm text-slate-600 dark:text-slate-300">Alignement discret et moderne.</p>
+<div class="fade card-hover rounded-2xl bg-slate-900/80 border border-slate-700 p-5">
+<p class="text-[11px] tracking-[0.25em] uppercase text-slate-400 mb-2">Implantologie</p>
+<h3 class="font-semibold mb-2 text-sm">Implants dentaires</h3>
+<p class="text-slate-200 mb-2">Remplacement durable des dents manquantes avec intégration naturelle.</p>
+<ul class="space-y-1 text-slate-400">
+<li>• Planification précise</li>
+<li>• Confort long terme</li>
+<li>• Esthétique soignée</li>
+</ul>
 </div>
 
-<div class="fade p-6 rounded-2xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow">
-<h3 class="font-semibold mb-2">Implants</h3>
-<p class="text-sm text-slate-600 dark:text-slate-300">Remplacement durable et naturel.</p>
-</div>
-
-</div>
-</section>
-
-<section id="gallery" class="max-w-6xl mx-auto px-4 py-16">
-<h2 class="text-3xl font-semibold mb-10 fade">Galerie</h2>
-<div class="grid md:grid-cols-4 gap-5">
-
-<div class="fade rounded-2xl overflow-hidden shadow border border-slate-200 dark:border-slate-800">
-<img src="https://images.unsplash.com/photo-1495573020741-8a2f372bbec3?w=600&auto=format&fit=crop&q=60" class="w-full h-40 object-cover"/>
-</div>
-
-<div class="fade rounded-2xl overflow-hidden shadow border border-slate-200 dark:border-slate-800">
-<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&auto=format&fit=crop&q=60" class="w-full h-40 object-cover"/>
-</div>
-
-<div class="fade rounded-2xl overflow-hidden shadow border border-slate-200 dark:border-slate-800">
-<img src="https://media.istockphoto.com/id/1147521454/fr/photo/plan-rapproch%C3%A9-de-femme-se-trouvant-sur-la-chaise-dentaire-avec-la-bouche-ouverte.webp?a=1&b=1&s=612x612&w=0&k=20&c=Z6UX4EyEesLEKcMdft1tpyCi74Ipq0m-wBXDVcQ9ujk=" class="w-full h-40 object-cover"/>
-</div>
-
-<div class="fade rounded-2xl overflow-hidden shadow border border-slate-200 dark:border-slate-800">
-<img src="https://media.istockphoto.com/id/2247102092/fr/photo/bouche-examen-et-mains-gant%C3%A9es-soins-dentaires-et-inspection-des-caries-sant%C3%A9-bucco-dentaire.webp?a=1&b=1&s=612x612&w=0&k=20&c=uTdkQ7h93gP7v150ZglifvJbGnC79tpeva2Z302FLYM=" class="w-full h-40 object-cover"/>
+<div class="fade card-hover rounded-2xl bg-slate-900/80 border border-slate-700 p-5">
+<p class="text-[11px] tracking-[0.25em] uppercase text-slate-400 mb-2">Urgences</p>
+<h3 class="font-semibold mb-2 text-sm">Urgences dentaires</h3>
+<p class="text-slate-200 mb-2">Douleurs aiguës, fractures, infections : prise en charge rapide.</p>
+<ul class="space-y-1 text-slate-400">
+<li>• Gestion de la douleur</li>
+<li>• Interventions rapides</li>
+<li>• Suivi après urgence</li>
+</ul>
 </div>
 
 </div>
 </section>
 
-<section id="contact" class="max-w-6xl mx-auto px-4 py-16">
-<h2 class="text-3xl font-semibold mb-6 fade">Contact</h2>
-<p class="text-sm text-slate-600 dark:text-slate-300 fade">Email : contact@exemple.com</p>
-<p class="text-sm text-slate-600 dark:text-slate-300 fade">Tanger, Maroc</p>
+<section id="galerie" class="max-w-6xl mx-auto px-4 py-12">
+<div class="fade mb-8">
+<h2 class="text-3xl font-semibold">Galerie du cabinet.</h2>
+<p class="text-sm text-slate-200 mt-2">Aperçu de l’ambiance, des outils et des soins réalisés.</p>
+</div>
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="fade rounded-3xl overflow-hidden shadow-lux border border-slate-800 card-hover">
+<img src="https://images.unsplash.com/photo-1495573020741-8a2f372bbec3?w=600&auto=format&fit=crop&q=60" class="w-full h-64 object-cover" alt="Dentiste au travail"/>
+</div>
+
+<div class="fade rounded-3xl overflow-hidden shadow-lux border border-slate-800 card-hover">
+<img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?w=600&auto=format&fit=crop&q=60" class="w-full h-64 object-cover" alt="Cabinet dentaire moderne"/>
+</div>
+
+<div class="fade rounded-3xl overflow-hidden shadow-lux border border-slate-800 card-hover">
+<img src="https://media.istockphoto.com/id/1147521454/fr/photo/plan-rapproch%C3%A9-de-femme-se-trouvant-sur-la-chaise-dentaire-avec-la-bouche-ouverte.webp?a=1&b=1&s=612x612&w=0&k=20&c=Z6UX4EyEesLEKcMdft1tpyCi74Ipq0m-wBXDVcQ9ujk=" class="w-full h-64 object-cover" alt="Patiente en soin"/>
+</div>
+
+<div class="fade rounded-3xl overflow-hidden shadow-lux border border-slate-800 card-hover">
+<img src="https://media.istockphoto.com/id/2247102092/fr/photo/bouche-examen-et-mains-gant%C3%A9es-soins-dentaires-et-inspection-des-caries-sant%C3%A9-bucco-dentaire.webp?a=1&b=1&s=612x612&w=0&k=20&c=uTdkQ7h93gP7v150ZglifvJbGnC79tpeva2Z302FLYM=" class="w-full h-64 object-cover" alt="Examen bucco-dentaire"/>
+</div>
+
+</div>
+</section>
+
+<section id="contact" class="max-w-6xl mx-auto px-4 py-12">
+<div class="fade space-y-3">
+<h2 class="text-3xl font-semibold">Contact & localisation.</h2>
+<p class="text-sm text-slate-200">Pour projets, collaborations ou informations sur les soins.</p>
+<p class="text-sm text-slate-200">Email : contact@exemple.com</p>
+<p class="text-sm text-slate-200">Ville : Tanger, Maroc</p>
+</div>
 </section>
 
 </main>
 
-<footer class="py-6 text-center text-xs text-slate-500 dark:text-slate-400">© <span id="year"></span> Dentiste · Portfolio</footer>
+<footer class="py-6 text-center text-xs text-slate-400">© <span id="year"></span> Cabinet dentaire moderne · Tous droits réservés.</footer>
 
 <script>
 document.getElementById("year").textContent=new Date().getFullYear();
 document.getElementById("themeToggle").onclick=()=>document.documentElement.classList.toggle("dark");
-const reveal=()=>document.querySelectorAll(".fade").forEach(e=>{if(e.getBoundingClientRect().top<window.innerHeight-60)e.classList.add("show")});
+const reveal=()=>{document.querySelectorAll(".fade").forEach(e=>{if(e.getBoundingClientRect().top<window.innerHeight-80)e.classList.add("show")})};
 window.addEventListener("scroll",reveal);reveal();
 </script>
 
